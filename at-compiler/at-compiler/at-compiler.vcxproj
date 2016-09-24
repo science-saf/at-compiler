@@ -90,24 +90,41 @@
     <None Include="grammar.y" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BaseAST.h" />
+    <ClInclude Include="BinaryExprAST.h" />
+    <ClInclude Include="enums.h" />
+    <ClInclude Include="FunctionAST.h" />
+    <ClInclude Include="FunctionCallAST.h" />
+    <ClInclude Include="FunctionPrototypeAST.h" />
     <ClInclude Include="grammar.h" />
+    <ClInclude Include="Logger.h" />
+    <ClInclude Include="NumberAST.h" />
     <ClInclude Include="ParserWrapper.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="structs.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Tokenizer.h" />
+    <ClInclude Include="VariableAST.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="at-compiler.cpp" />
+    <ClCompile Include="BaseAST.cpp" />
+    <ClCompile Include="BinaryExprAST.cpp" />
+    <ClCompile Include="FunctionAST.cpp" />
+    <ClCompile Include="FunctionCallAST.cpp" />
+    <ClCompile Include="FunctionPrototypeAST.cpp" />
     <ClCompile Include="grammar.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Logger.cpp" />
+    <ClCompile Include="NumberAST.cpp" />
     <ClCompile Include="ParserWrapper.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="Tokenizer.cpp" />
+    <ClCompile Include="VariableAST.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -7,6 +7,7 @@
 #include "ParserWrapper.h"
 #include "Tokenizer.h"
 #include "grammar.h"
+#include "Logger.h"
 
 using namespace std;
 

@@ -14,3 +14,5 @@
 #include <boost/utility/string_ref.hpp>
 #include <cassert>
 #include <iostream>
+#include <vector>
+#include <memory>
