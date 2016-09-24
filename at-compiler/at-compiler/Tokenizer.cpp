@@ -24,6 +24,7 @@ int Tokenizer::GetToken(Token& token)
 		token.value = value;
 		return TK_NUMBER;
 	}
+	token.value = 0;
 	switch (m_str[0])
 	{
 	case '+':

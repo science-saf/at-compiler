@@ -18,7 +18,7 @@
 
 output ::= expr(A).
 {
-	std::cout << A.value;
+	parserWrapper->log(A.toString());
 }
 
 error ::= ERROR.

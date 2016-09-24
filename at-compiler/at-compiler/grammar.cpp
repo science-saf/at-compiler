@@ -720,7 +720,7 @@ static void yy_reduce(
         YYMINORTYPE yylhsminor;
       case 0: /* output ::= expr */
 {
-	std::cout << yymsp[0].minor.yy4.value;
+	parserWrapper->log(yymsp[0].minor.yy4.toString());
 }
         break;
       case 1: /* expr ::= expr PLUS expr */

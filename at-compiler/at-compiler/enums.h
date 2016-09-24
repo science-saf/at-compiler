@@ -4,7 +4,7 @@ enum MathOperator
 {
 	PLUS,
 	MINUS,
-	MULTIPLY,
+	TIMES,
 	DIVIDE
 };
 
